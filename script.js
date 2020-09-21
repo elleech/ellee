@@ -52,11 +52,6 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Carousal speed
-  $(document).ready(function () {
-    jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000; // 2 seconds
-  });
-
   // Protect image right-clicking
   $(document).on("contextmenu", "img", function () {
     return false;
