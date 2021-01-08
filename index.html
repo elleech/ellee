@@ -1,568 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+	<head>
     <!-- favicon -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
     <title>Ellee Chen</title>
-  </head>
-  <body id="top">
-    <!-- <div includeHtml="navbar.html"></div> -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
-        <a class="navbar-brand js-scroll-trigger" href="#top">(⌐▨ω▨)</a>
+		<!-- Wrapper-->
+			<div id="wrapper">
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#courses">
-                Related Courses
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">
-                Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mailto:yec24@pitt.edu">
-                <img src="./assets/icon/icons8-email-100.png" id="icon" />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://www.linkedin.com/in/ellee-ym-chen/"
-                target="_blank"
-              >
-                <img src="./assets/icon/icons8-linkedin-circled.svg" id="icon" />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://github.com/elleech"
-                target="_blank"
-              >
-                <img src="./assets/icon/icons8-github.svg" id="icon" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+            <a href="#projects" class="icon solid fa-folder"><span>Projects</span></a>
+            <a href="#education" class="icon solid fa-graduation-cap"><span>Edu & Skills</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+					</nav>
 
-    <section class="about-section" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-3 justify-content-center">
-            <img src="./assets/LinkedIn.png" id="profile" style="width:100%;"/>
-          </div>
+				<!-- Main -->
+					<div id="main">
 
-          <div class="col-9">
-            <div class="row">
-              <h1>Ellee Chen</h1>
-            </div>
-            <p></p>
-            <div class="row">
-              <p>
-                Highly motivated software developer. Seeking full-time
-                employment.
-              </p>
-              <ul>
-                <li>
-                  Master's student in the
-                  <a href="https://www.sci.pitt.edu/" target="_blank">
-                    School of Computing and Information
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Ellee Chen</h1>
+                  <p>Software Developer seeking full-time employment</p>
+								</header>
+								<a href="#" class="jumplink pic" style="pointer-events:none;cursor:default;">
+                  <img src="images/profile.png" alt="my profile picture" />
+								</a>
+							</article>
+
+						<!-- Projects -->
+							<article id="projects" class="panel">
+								<header>
+									<h2>Projects</h2>
+								</header>
+                <p></p>
+                <section>
+                  <p>
+                    More pure Java projects in <a href="https://github.com/elleech/java_pitt" target="_blank">my GitHub</a>!
+                  </p>
+                </section>
+								<section>
+									<div class="row">
+                    <div class="col-6 col-12-small project-item">
+                      <a class="image fit thumb" href="https://infsci2140-fp-spotifind.herokuapp.com/" target="_blank">
+                        <img src="images/project/infsci2140_fp-SpotiFind.png" alt="Click to see project SpotiFind" />
+                      </a>
+                      <h3>SpotiFind</h3>
+                      <p>
+                        This was a group project of Information Storage & Retrieval course work. 
+                        I was the full-stack developer who created the whole site 
+                        and built some of the backend classes that we needed. 
+                        We used <em>Python</em> and <em>MongoDB</em> as backend tools, 
+                        and <em>Django</em> for frontend website.
+                      </p>
+                      <p class="text-small">
+                        Because it's deployed on free Heroku, it might take some time to connect 
+                        to the server. Please refresh page if not seeing data come out.
+                      </p>
+                      <p class="text-small">
+                        View source code
+                        <a href="https://github.com/elleech/web_practice/tree/master/spotifind" target="_blank">
+                          HERE
+                        </a>
+                      </p>
+                    </div>
+
+                    <div class="col-6 col-12-small project-item">
+                      <a class="image fit thumb" href="https://elleech.github.io/infsci2710-customer_service/reports" target="_blank">
+                        <img src="images/project/customer_service.png" alt="Click to see project Customer Service App" />
+                      </a>
+                      <h3>Customer Service App</h3>
+                      <p>
+                        This was a personal practice of redoing Database Management final project. 
+                        Using <em>MEAN stack (MongoDB Atlas, Express.js, Angular, Node.js)</em> 
+                        on building a web platform that can allow customer service faculties 
+                        to create/update retail records, personnel and manage customer issue reports.
+                      </p>
+                      <p class="text-small">
+                        Because it's deployed on free Heroku, it might take some time to connect 
+                        to the server. Please refresh page if not seeing data come out.
+                      </p>
+                      <p class="text-small">
+                        View source code
+                        <a href="https://github.com/elleech/web_practice/tree/master/customer_service" target="_blank">
+                          HERE
+                        </a>
+                      </p>
+                    </div>
+
+                    <div class="col-6 col-12-small project-item">
+                      <a class="image fit thumb" href="https://infsci2560-fp-webarticles.herokuapp.com/" target="_blank">
+                        <img src="images/project/infsci2560_fp-WebArticles.png" alt="Click to see project WebArticles" />
+                      </a>
+                      <h3>WebArticles</h3>
+                      <p>
+                        This was a group project of Web Technologies & Standards course work. 
+                        It is a blogging website that allows users to signup, login in, 
+                        post/update/delete articles and comments. 
+                        I was one of the full-stack developers, who designed "comment" section. 
+                        We used <em>Node & Express.js</em>, <em>Passport.js</em> and <em>MongoDB</em> as backend tools, 
+                        and <em>EJS (Embedded JavaScript)</em> for frontend website.
+                      </p>
+                      <p class="text-small">
+                        Because it's deployed on free Heroku, it might take some time to connect 
+                        to the server. Please refresh page if not seeing data come out.
+                      </p>
+                      <p class="text-small">
+                        View source code
+                        <a href="https://github.com/elleech/web_pitt/tree/master/infsci2560_fp-WebArticles" target="_blank">
+                          HERE
+                        </a>
+                      </p>
+                    </div>
+
+                    <div class="col-6 col-12-small project-item">
+                      <a class="image fit thumb" href="https://infsci2560-a3b-helloworld.herokuapp.com/" target="_blank">
+                        <img src="images/project/infsci2560_a3b-HelloWorld.png" alt="Click to see project HelloWorld" />
+                      </a>
+                      <h3>HelloWorld</h3>
+                      <p>
+                        This was an assignment of Web Technologies & Standards course work. 
+                        It is a <em>RESTful</em> website of countries and cities 
+                        which designed for people to manage their future travel destinations 
+                        during COVID-19 quarantine. 
+                        I used <em>Node & Express.js</em> and <em>MongoDB</em> as backend tools, 
+                        and <em>EJS (Embedded JavaScript)</em> for frontend website.
+                      </p>
+                      <p class="text-small">
+                        Because it's deployed on free Heroku, it might take some time to connect 
+                        to the server. Please refresh page if not seeing data come out.
+                      </p>
+                      <p class="text-small">
+                        View source code
+                        <a href="https://github.com/elleech/web_pitt/tree/master/infsci2560_a3b-HelloWorld" target="_blank">
+                          HERE
+                        </a>
+                      </p>
+                    </div>
+
+                    <div class="col-6 col-12-small project-item">
+                      <a class="image fit thumb" href="https://elleech.github.io/infsci2560_a2-ReactGoBoard/" target="_blank">
+                        <img src="images/project/infsci2560_a2-ReactGoBoard.png" alt="Click to see project ReactGoBoard" />
+                      </a>
+                      <h3>ReactGoBoard</h3>
+                      <p>
+                        This was an assignment of Web Technologies & Standards course work. 
+                        It was my first React app of creating a Go game. 
+                        However, it is only for the board of the game, not the game itself. 
+                        Made by <em>React.js</em>.
+                      </p>
+                      <p class="text-small">
+                        View source code
+                        <a href="https://github.com/elleech/web_pitt/tree/master/infsci2560_a2-ReactGoBoard" target="_blank">
+                          HERE
+                        </a>
+                      </p>
+                    </div>
+
+                    <div class="col-6 col-12-small project-item">
+                      <a class="image fit thumb" href="https://elleech.github.io/infsci2560_a1-asgmt1lottery/" target="_blank">
+                        <img src="images/project/infsci2560_a1-asgmt1lottery.png" alt="Click to see project asgmt1lottery" />
+                      </a>
+                      <h3>asgmt1lottery</h3>
+                      <p>
+                        This was an assignment of Web Technologies & Standards course work. 
+                        It was my very first website which displays two US lottery games - 
+                        MegaMillions and PowerBall - and shows number drawing frequencies 
+                        by the help of <em>python</em> and <em>Google Chart API</em>. 
+                        It also picks random weighted numbers for users as a reference of 
+                        buying thier next lottery tickets!
+                        Made by pure <em>HTML, CSS, and JavaScript</em>.
+                      </p>
+                      <p class="text-small">
+                        View source code
+                        <a href="https://github.com/elleech/web_pitt/tree/master/infsci2560_a1-asgmt1lottery" target="_blank">
+                          HERE
+                        </a>
+                      </p>
+                    </div>
+									</div>
+								</section>
+              </article>
+              
+            <!-- Education & Skills -->
+							<article id="education" class="panel">
+								<header>
+									<h2>Education & Skills</h2>
+                </header>
+                <p>
+                  <ul>
+                    <li>
+                      Master's student in the 
+                      <a href="https://www.sci.pitt.edu/" target="_blank">School of Computing and Information</a> 
+                      at the University of Pittsburgh, major in <em>Information Science</em></br>
+                    </li>
+                    <li>Master of Science in Applied Mechanics at the National Taiwan University</li>
+                    <li>Bachelor of Science in Mechanical Engineering at the National Cheng Kung University</li>
+                  </ul>
+                </p>
+
+                <h3>Skills</h3>
+                <p></p>
+                <div class="row">
+                  <div class="col-6 col-12-small">
+                    <ul>
+                      <li>Programming:</li>
+                      <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                      </ul>
+                      <li>Database:</li>
+                      <ul>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                      </ul>
+                    </ul>
+                  </div>
+
+                  <div class="col-6 col-12-small">
+                    <ul>
+                      <li>Web:</li>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                      </ul>
+                      <li>Framework:</li>
+                      <ul>
+                        <li>Node.js & Express.js</li>
+                        <li>Angular</li>
+                        <li>Django</li>
+                        <li>React.js</li>
+                        <li>Spring Boot</li>
+                        <li>Bootstrap</li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3>Relevant Courses</h3>
+                <p></p>
+                <div class="row">
+                  <div class="col-6 col-12-small">
+                    <ul>
+                      <li>Algorithm Design</li>
+                      <li>Data Structures</li>
+                      <li>Object-Oriented Programming (Java)</li>
+                      <li>Information Storage & Retrieval</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-6 col-12-small">
+                    <ul>
+                      <li>Machine Learning</li>
+                      <li>Data Mining</li>
+                      <li>Database Management</li>
+                      <li>Web Technologies & Standards</li>
+                    </ul>
+                  </div>
+                </div>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<div class="row aln-center">
+                  <a href="mailto:yec24@pitt.edu">
+                    <img src="./images/icon/icons8-email-96.png"
+                         onmouseover="this.src='./images/icon/icons8-email-96-top.png'"
+                         onmouseout="this.src='./images/icon/icons8-email-96.png'" 
+                         alt="Click to send an email" />
                   </a>
-                  at the University of Pittsburgh, major in
-                  <u>Information Science</u>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  Master of Science in Applied Mechanics at the National Taiwan
-                  University
-                </li>
-                <li>
-                  Bachelor of Science in Mechanical Engineering at the National
-                  Cheng Kung University
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                  
+                  <a href="https://www.linkedin.com/in/ellee-ym-chen/" target="_blank">
+                    <img src="./images/icon/icons8-linkedin-96.png"
+                         onmouseover="this.src='./images/icon/icons8-linkedin-96-top.png'"
+                         onmouseout="this.src='./images/icon/icons8-linkedin-96.png'"
+                         alt="Click to see LinkedIn" />
+                  </a>
+                  
+                  <a href="https://github.com/elleech" target="_blank">
+                    <img src="./images/icon/icons8-github-96.png"
+                         onmouseover="this.src='./images/icon/icons8-github-96-top.png'"
+                         onmouseout="this.src='./images/icon/icons8-github-96.png'"
+                         alt="Click to see GitHub" />
+                  </a>
+                </div>
+							</article>
 
-    <section class="skills-section" id="skills">
-      <div class="container">
-        <div class="row">
-          <h3>Skills</h3>
-        </div>
+					</div>
 
-        <div class="row">
-          <div class="col">
-            <ul>
-              <li>Programming:</li>
-              <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>R</li>
-                <li>MATLAB</li>
-              </ul>
-              <li>Database:</li>
-              <ul>
-                <li>PostgreSQL</li>
-                <li>MongoDB</li>
-              </ul>
-            </ul>
-          </div>
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+              <li>Ellee Chen &#128521; 2021</li>
+              <li>adapted from <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+						</ul>
+					</div>
 
-          <div class="col">
-            <ul>
-              <li>Web:</li>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-              </ul>
-              <li>Framework:</li>
-              <ul>
-                <li>Node.js & Express.js</li>
-                <li>Angular</li>
-                <li>Django</li>
-                <li>React.js</li>
-                <li>Spring Boot</li>
-                <li>Bootstrap</li>
-              </ul>
-            </ul>
-          </div>
-        </div>
-    </section>
+			</div>
 
-    <section class="courses-section" id="courses">
-      <div class="container">
-        <div class="row">
-          <h3>Related Courses</h3>
-        </div>
-        <div class="row">
-          <div class="col">
-            <ul>
-              <li>Algorithm Design</li>
-              <li>Data Structures</li>
-              <li>Object-Oriented Programming (Java)</li>
-              <li>Information Storage & Retrieval</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li>Machine Learning</li>
-              <li>Data Mining</li>
-              <li>Database Management</li>
-              <li>Web Technologies & Standards</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-    <section class="projects-section" id="projects">
-      <div class="container">
-        <div class="row">
-          <h3>Projects</h3>
-        </div>
-
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col mb-4">
-            <div class="card text-white bg-dark">
-              <a
-                href="https://infsci2140-fp-spotifind.herokuapp.com/"
-                target="_blank"
-              >
-                <img
-                  src="./assets/project/infsci2140_fp-SpotiFind.png"
-                  class="card-img-top"
-                  height="250vh"
-                  width="auto"
-                />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">SpotiFind</h5>
-                <p class="card-text">
-                  This was a group project of Information Storage & Retrieval course work. 
-                  I was the full-stack developer who created the whole site and built some of the 
-                  backend classes that we needed. We used 
-                  <u>Python</u> and <u>MongoDB</u> as backend tools, and
-                  <u>Django</u> for frontend website.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    Because it's deployed on free Heroku, it might take some
-                    time to connect to the server. Please refresh page if not
-                    seeing data come out.
-                  </small>
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    View source code
-                    <a
-                      href="https://github.com/elleech/web_practice/tree/master/spotifind"
-                      target="_blank"
-                      >HERE
-                    </a>
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col mb-4">
-            <div class="card text-white bg-dark">
-              <a
-                href="https://elleech.github.io/infsci2710-customer_service/reports"
-                target="_blank"
-              >
-                <img
-                  src="./assets/project/customer_service.png"
-                  class="card-img-top"
-                  height="250vh"
-                  width="auto"
-                />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Customer Service App</h5>
-                <p class="card-text">
-                  This was a personal practice of redoing Database Management
-                  final project. Using
-                  <u>
-                    MEAN stack (MongoDB Atlas, Express.js, Angular, Node.js)
-                  </u>
-                  on building a web platform that can allow customer service
-                  faculties to create/update retail records, personnel and
-                  manage customer issue reports.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    Because it's deployed on free Heroku, it might take some
-                    time to connect to the server. Please refresh page if not
-                    seeing data come out.
-                  </small>
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    View source code
-                    <a
-                      href="https://github.com/elleech/web_practice/tree/master/customer_service"
-                      target="_blank"
-                      >HERE
-                    </a>
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col mb-4">
-            <div class="card text-white bg-dark">
-              <img
-                src="./assets/project/infsci2710_fp.png"
-                class="card-img-top"
-                height="250vh"
-                width="auto"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Database System for Customer Support</h5>
-                <p class="card-text">
-                  This was a group project of Database Management course work. I
-                  was one of the backend developers. We used
-                  <u>Spring Boot</u> and <u>PostgreSQL</u> as backend tools, and
-                  <u>Angular</u> for frontend website.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    The project is not deployed, but you can view source code
-                    <a
-                      href="https://github.com/elleech/database_pitt"
-                      target="_blank"
-                    >
-                      HERE
-                    </a>
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col mb-4">
-            <div class="card text-white bg-dark">
-              <a
-                href="https://infsci2560-fp-webarticles.herokuapp.com/"
-                target="_blank"
-              >
-                <img
-                  src="./assets/project/infsci2560_fp-WebArticles.png"
-                  class="card-img-top"
-                  height="250vh"
-                  width="auto"
-                />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">WebArticles</h5>
-                <p class="card-text">
-                  This was a group project of Web Technologies & Standards
-                  course work. It is a blogging website that allows users to
-                  signup, login in, post/update/delete articles and comments. I
-                  was one of the full-stack developers, who designed "comment"
-                  section. We used
-                  <u>Node & Express.js</u>, <u>Passport.js</u> and
-                  <u>MongoDB</u> as backend tools, and
-                  <u>EJS (Embedded JavaScript)</u> for frontend website.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    Because it's deployed on free Heroku, it might take some
-                    time to connect to the server. Please refresh page if not
-                    seeing data come out.
-                  </small>
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    View source code
-                    <a
-                      href="https://github.com/elleech/web_pitt/tree/master/infsci2560_fp-WebArticles"
-                      target="_blank"
-                    >
-                      HERE
-                    </a>
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col mb-4">
-            <div class="card text-white bg-dark">
-              <a
-                href="https://infsci2560-a3b-helloworld.herokuapp.com/"
-                target="_blank"
-              >
-                <img
-                  src="./assets/project/infsci2560_a3b-HelloWorld.png"
-                  class="card-img-top"
-                  height="250vh"
-                  width="auto"
-                />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">HelloWorld</h5>
-                <p class="card-text">
-                  This was an assignment of Web Technologies & Standards course
-                  work. It is a <u>RESTful</u> website of countries and cities
-                  which designed for people to manage their future travel
-                  destinations during COVID-19 quarantine. I used
-                  <u>Node & Express.js</u> and <u>MongoDB</u> as backend tools,
-                  and <u>EJS (Embedded JavaScript)</u> for frontend website.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    Because it's deployed on free Heroku, it might take some
-                    time to connect to the server. Please refresh page if not
-                    seeing data come out.
-                  </small>
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    View source code
-                    <a
-                      href="https://github.com/elleech/web_pitt/tree/master/infsci2560_a3b-HelloWorld"
-                      target="_blank"
-                    >
-                      HERE
-                    </a>
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col mb-4">
-            <div class="card text-white bg-dark">
-              <a
-                href="https://elleech.github.io/infsci2560_a2-ReactGoBoard/"
-                target="_blank"
-              >
-                <img
-                  src="./assets/project/infsci2560_a2-ReactGoBoard.png"
-                  class="card-img-top"
-                  height="auto"
-                  width="auto"
-                />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">ReactGoBoard</h5>
-                <p class="card-text">
-                  This was an assignment of Web Technologies & Standards course
-                  work. It was my first React app of creating a Go game.
-                  However, it is only for the board of the game, not the game
-                  itself. Made by
-                  <u>React.js</u>.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    View source code
-                    <a
-                      href="https://github.com/elleech/web_pitt/tree/master/infsci2560_a2-ReactGoBoard"
-                      target="_blank"
-                    >
-                      HERE
-                    </a>
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col mb-4">
-            <div class="card text-white bg-dark">
-              <a
-                href="https://elleech.github.io/infsci2560_a1-asgmt1lottery/"
-                target="_blank"
-              >
-                <img
-                  src="./assets/project/infsci2560_a1-asgmt1lottery.png"
-                  class="card-img-top"
-                  height="auto"
-                  width="auto"
-                />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">asgmt1lottery</h5>
-                <p class="card-text">
-                  This was an assignment of Web Technologies & Standards course
-                  work. It was my very first website which displays two US
-                  lottery games - MegaMillions and PowerBall - and shows number
-                  drawing frequencies by the help of <u>python</u> and
-                  <u>Google Chart API</u>. It also picks random weighted numbers
-                  for users as a reference of buying thier next lottery tickets!
-                  Made by pure <u>HTML, CSS, and JavaScript</u>.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    View source code
-                    <a
-                      href="https://github.com/elleech/web_pitt/tree/master/infsci2560_a1-asgmt1lottery"
-                      target="_blank"
-                    >
-                      HERE
-                    </a>
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <p>
-            More Java projects in
-            <a href="https://github.com/elleech/java_pitt" target="_blank">
-              my GitHub
-            </a>
-            !
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="container">
-        <div class="row">
-          <h3>Contact</h3>
-        </div>
-
-        <div class="row justify-content-center">
-          <span>
-            <a class="nav-link" href="mailto:yec24@pitt.edu">
-              <div class="card">
-                <img src="./assets/icon/icons8-email-96.png" />
-                <img src="./assets/icon/icons8-email-96-top.png" class="img-top" />
-              </div>
-            </a>
-          </span>
-
-          <span>
-            <a
-              class="nav-link"
-              href="https://www.linkedin.com/in/ellee-ym-chen/"
-              target="_blank"
-            >
-              <div class="card">
-                <img src="./assets/icon/icons8-linkedin-96.png" />
-                <img
-                  src="./assets/icon/icons8-linkedin-96-top.png"
-                  class="img-top"
-                />
-              </div>
-            </a>
-          </span>
-
-          <span>
-            <a
-              class="nav-link"
-              href="https://github.com/elleech"
-              target="_blank"
-            >
-              <div class="card">
-                <img src="./assets/icon/icons8-github-96.png" />
-                <img src="./assets/icon/icons8-github-96-top.png" class="img-top" />
-              </div>
-            </a>
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <section class="spacer mb-5"></section>
-
-    <footer>Made by ELLEE CHEN 2020</footer>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Core theme JS-->
-    <script src="script.js"></script>
-  </body>
+	</body>
 </html>
