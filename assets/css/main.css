@@ -1388,8 +1388,7 @@ html {
 }
 
 body {
-  background-image: url("images/overlay.png"),
-    url("images/adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
+  background-image: url("images/overlay.png"), url("images/bg.jpg");
   /* background: linear-gradient(to bottom, #a25d85, #d8bfd8, #e6b6b0); */
   background-repeat: repeat, no-repeat;
   background-size: auto, 100% 100%;
