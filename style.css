@@ -1,0 +1,50 @@
+﻿body {
+    background: url("images/bg.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+main {
+    background: white;
+    opacity: 0.75;
+    padding: 3em;
+}
+
+footer {
+    color: rgba(255,255,255,0.55);
+}
+
+a:link {
+    color: steelblue;
+}
+a:visited {
+    color: darkslateblue;
+}
+a:hover {
+    color: plum !important;
+}
+a:active {
+    color: slateblue;
+}
+
+.nav-link:hover {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+@media (min-width: 768px) {
+    #wrapper {
+        margin: auto;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* transition: opacity 1s ease-in-out; */
+    }
+    main {
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+    footer {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+}
