@@ -6,8 +6,8 @@ $(function () {
             case 'project':
                 $('.nav-link:contains("Projects")').css('color', 'white');
                 break;
-            case 'education':
-                $('.nav-link:contains("Education")').css('color', 'white');
+            case 'skill':
+                $('.nav-link:contains("Skill")').css('color', 'white');
                 break;
             case 'love':
                 $('.nav-link:contains("Love")').css('color', 'white');
@@ -26,20 +26,20 @@ $(function () {
         var tag = $(this).attr('href');
         switch (tag) {
             case '#':
-                $('.panel').not('#home').stop(true, true).slideUp(100);
-                $('#home').stop(true, true).slideDown(200);
+                $('.panel').not('#home').stop(true, false).slideUp(100, function() {$('html, body').animate({duration:100, scrollTop:0})});
+                $('#home').stop(true, false).slideDown(200);
                 break;
             case '#project':
-                $('.panel').not('#project').stop(true, true).slideUp(100);
-                $('#project').stop(true, true).slideDown(200);
+                $('.panel').not('#project').stop(true, false).slideUp(100, function() {$('html, body').animate({duration:100, scrollTop:0})});
+                $('#project').stop(true, false).slideDown(200);
                 break;
-            case '#education':
-                $('.panel').not('#education').stop(true, true).slideUp(100);
-                $('#education').stop(true, true).slideDown(200);
+            case '#skill':
+                $('.panel').not('#skill').stop(true, false).slideUp(100, function() {$('html, body').animate({duration:100, scrollTop:0})});
+                $('#skill').stop(true, false).slideDown(200);
                 break;
             case '#love':
-                $('.panel').not('#love').stop(true, true).slideUp(100);
-                $('#love').stop(true, true).slideDown(200);
+                $('.panel').not('#love').stop(true, false).slideUp(100, function() {$('html, body').animate({duration:100, scrollTop:0})});
+                $('#love').stop(true, false).slideDown(200);
                 break;
             default:
                 break;
