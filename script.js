@@ -1,9 +1,11 @@
 $(function () {
+    // Bootstrap tooltips
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
     });
 
+    // initial nav-item
     var hash = window.location.hash;
     if (hash) {
         $('.panel').not(hash).hide();
@@ -16,6 +18,9 @@ $(function () {
                 break;
             case 'love':
                 $('.nav-link:contains("Love")').css('color', 'white');
+                break;
+            case 'travel':
+                $('.nav-link:contains("&#9992;")').css('color', 'white');
                 break;
             default:
                 break;
@@ -50,6 +55,10 @@ $(function () {
             case '#love':
                 $('.panel').not('#love').stop(true, false).slideUp(100);
                 $('#love').stop(true, false).slideDown(200);
+                break;
+            case '#travel':
+                $('.panel').not('#travel').stop(true, false).slideUp(100);
+                $('#travel').stop(true, false).slideDown(200);
                 break;
             default:
                 break;

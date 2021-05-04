@@ -5,7 +5,7 @@
 
 main {
     background: white;
-    opacity: 0.75;
+    opacity: 0.8;
     padding: 3em;
 }
 
@@ -30,6 +30,11 @@ a:active {
     color: rgba(255,255,255,0.8) !important;
 }
 
+#map {
+    height: 50vh;
+    max-width: 100%;
+}
+
 @media (min-width: 768px) {
     #wrapper {
         margin: auto;
@@ -37,10 +42,11 @@ a:active {
         display: flex;
         align-items: center;
         justify-content: center;
-        /* transition: opacity 1s ease-in-out; */
     }
     main {
         max-height: 75vh;
+        width: 100%;
+        max-width: 75vw;
         overflow-y: auto;
     }
     footer {
