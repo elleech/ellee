@@ -4,7 +4,7 @@ gtag('js', new Date());
 gtag('config', 'G-XK2XKEB0H7');
 
 function initMap() {
-    var center = { lat: 0, lng: 120 };
+    var center = { lat: 25, lng: 120 };
     var locations = [
         ['Home', 25.0689, 121.5909, 'TW'],
         ['Hong Kong', 22.3193, 114.1694, 'CN'],
@@ -91,7 +91,7 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
         center: center,
-        zoom: 1,
+        zoom: 1.5,
     });
 
     var infowindow = new google.maps.InfoWindow();
