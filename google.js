@@ -8,7 +8,6 @@ function initMap() {
     var locations = [
         ['Home', 25.0689, 121.5909, 'TW'],
         ['Hong Kong', 22.3193, 114.1694, 'CN'],
-        ['Hamilton', -37.7826, 175.2528, 'NZ'],
         ['Waikato University', -37.7869, 175.3185, 'NZ'],
         ['Auckland', -36.8509, 174.7645, 'NZ'],
         ['Rotorua', -38.1446, 176.2378, 'NZ'],
