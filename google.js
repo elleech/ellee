@@ -6,7 +6,7 @@ gtag('config', 'G-XK2XKEB0H7');
 function initMap() {
     var center = { lat: 25, lng: 120 };
     var locations = [
-        ['Home', 25.0689, 121.5909, 'TW'],
+        ['Hometown', 25.0689, 121.5909, 'TW'],
         ['Hong Kong', 22.3193, 114.1694, 'CN'],
         ['Waikato University', -37.7869, 175.3185, 'NZ'],
         ['Auckland', -36.8509, 174.7645, 'NZ'],
@@ -20,6 +20,7 @@ function initMap() {
         ['National Taiwan University', 25.0173, 121.5398, 'TW'],
         ['Madison', 43.0731, -89.4012, 'US'],
         ['Yellowstone National Park', 44.4280, -110.5885, 'US'],
+        ['Grand Teton National Park', 43.7904, -100.6818, 'US'],
         ['Oshkosh', 44.0247, -88.5426, 'US'],
         ['Milwaukee', 43.0389, -87.9065, 'US'],
         ['Chicago', 41.8781, -87.6298, 'US'],
