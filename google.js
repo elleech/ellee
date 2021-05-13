@@ -20,7 +20,7 @@ function initMap() {
         ['National Taiwan University', 25.0173, 121.5398, 'TW'],
         ['Madison', 43.0731, -89.4012, 'US'],
         ['Yellowstone National Park', 44.4280, -110.5885, 'US'],
-        ['Grand Teton National Park', 43.7904, -100.6818, 'US'],
+        ['Grand Teton National Park', 43.7904, -110.6818, 'US'],
         ['Oshkosh', 44.0247, -88.5426, 'US'],
         ['Milwaukee', 43.0389, -87.9065, 'US'],
         ['Chicago', 41.8781, -87.6298, 'US'],
