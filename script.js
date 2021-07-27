@@ -16,12 +16,6 @@ $(function () {
             case 'skill':
                 $('.nav-link:contains("Skill")').css('color', 'white');
                 break;
-            case 'love':
-                $('.nav-link:contains("Love")').css('color', 'white');
-                break;
-            case 'travel':
-                $('.nav-link:contains("&#9992;")').css('color', 'white');
-                break;
             default:
                 break;
         }
@@ -51,14 +45,6 @@ $(function () {
             case '#skill':
                 $('.panel').not('#skill').stop(true, false).slideUp(100);
                 $('#skill').stop(true, false).slideDown(200);
-                break;
-            case '#love':
-                $('.panel').not('#love').stop(true, false).slideUp(100);
-                $('#love').stop(true, false).slideDown(200);
-                break;
-            case '#travel':
-                $('.panel').not('#travel').stop(true, false).slideUp(100);
-                $('#travel').stop(true, false).slideDown(200);
                 break;
             default:
                 break;
